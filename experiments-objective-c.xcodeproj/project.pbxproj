@@ -13,6 +13,8 @@
 		49C472C61D82D2FE0081DD85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C472C41D82D2FE0081DD85 /* Main.storyboard */; };
 		49C472C81D82D2FE0081DD85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C472C71D82D2FE0081DD85 /* Assets.xcassets */; };
 		49C472CB1D82D2FE0081DD85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49C472C91D82D2FE0081DD85 /* LaunchScreen.storyboard */; };
+		49C472D61D82D3940081DD85 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C472D51D82D3940081DD85 /* BaseViewController.m */; };
+		49C472DA1D82D92C0081DD85 /* UIViewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C472D91D82D92C0081DD85 /* UIViewExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		49C472C71D82D2FE0081DD85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C472CA1D82D2FE0081DD85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49C472CC1D82D2FE0081DD85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C472D41D82D3940081DD85 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		49C472D51D82D3940081DD85 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		49C472D81D82D92C0081DD85 /* UIViewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExtension.h; sourceTree = "<group>"; };
+		49C472D91D82D92C0081DD85 /* UIViewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,13 @@
 		49C472BA1D82D2FE0081DD85 /* experiments-objective-c */ = {
 			isa = PBXGroup;
 			children = (
+				49C472D71D82D8660081DD85 /* extensions */,
+				49C472D21D82D3280081DD85 /* view */,
 				49C472BE1D82D2FE0081DD85 /* AppDelegate.h */,
 				49C472BF1D82D2FE0081DD85 /* AppDelegate.m */,
-				49C472C11D82D2FE0081DD85 /* ViewController.h */,
-				49C472C21D82D2FE0081DD85 /* ViewController.m */,
 				49C472C41D82D2FE0081DD85 /* Main.storyboard */,
-				49C472C71D82D2FE0081DD85 /* Assets.xcassets */,
 				49C472C91D82D2FE0081DD85 /* LaunchScreen.storyboard */,
+				49C472C71D82D2FE0081DD85 /* Assets.xcassets */,
 				49C472CC1D82D2FE0081DD85 /* Info.plist */,
 				49C472BB1D82D2FE0081DD85 /* Supporting Files */,
 			);
@@ -77,6 +83,34 @@
 				49C472BC1D82D2FE0081DD85 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49C472D21D82D3280081DD85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				49C472D31D82D3320081DD85 /* screens */,
+				49C472D41D82D3940081DD85 /* BaseViewController.h */,
+				49C472D51D82D3940081DD85 /* BaseViewController.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		49C472D31D82D3320081DD85 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				49C472C11D82D2FE0081DD85 /* ViewController.h */,
+				49C472C21D82D2FE0081DD85 /* ViewController.m */,
+			);
+			name = screens;
+			sourceTree = "<group>";
+		};
+		49C472D71D82D8660081DD85 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				49C472D81D82D92C0081DD85 /* UIViewExtension.h */,
+				49C472D91D82D92C0081DD85 /* UIViewExtension.m */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +183,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C472DA1D82D92C0081DD85 /* UIViewExtension.m in Sources */,
 				49C472C31D82D2FE0081DD85 /* ViewController.m in Sources */,
+				49C472D61D82D3940081DD85 /* BaseViewController.m in Sources */,
 				49C472C01D82D2FE0081DD85 /* AppDelegate.m in Sources */,
 				49C472BD1D82D2FE0081DD85 /* main.m in Sources */,
 			);

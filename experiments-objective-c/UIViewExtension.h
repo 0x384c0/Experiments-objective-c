@@ -1,15 +1,14 @@
 //
-//  ViewController.h
+//  UIViewExtension.h
 //  experiments-objective-c
 //
 //  Created by Andrew Ashurow on 09.09.16.
 //  Copyright © 2016 Andrew Ashurow. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface ViewController : BaseViewController
-
+@interface UIView()
+- (void) setBlack;
 @end
-
