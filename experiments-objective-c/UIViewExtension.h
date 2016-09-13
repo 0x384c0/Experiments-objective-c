@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UIView()
-- (void) setBlack;
+@interface UIView(Util)
+- (void) makeItBlack;
 @end

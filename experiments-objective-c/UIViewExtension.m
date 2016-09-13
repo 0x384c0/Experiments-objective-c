@@ -7,12 +7,8 @@
 //
 
 #import "UIViewExtension.h"
-
-@interface UIView()
-@end
-
-@implementation UIView
-- (void) setBlack{
+@implementation UIView(Util)
+- (void) makeItBlack{
     [self setBackgroundColor: [UIColor blackColor]];
 }
 @end

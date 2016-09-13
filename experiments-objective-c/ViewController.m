@@ -18,7 +18,7 @@
 - (void)setupViewController {
     
     
-    [self.view setBlack];
+    [self.view makeItBlack];
     NSLog(@"Setup overrided");
 }
 
