@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "433930B971FF5F133AD4C8053EB3EA2B2D3761DA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "433930B971FF5F133AD4C8053EB3EA2B2D3761DA" : 0,
+    "770655F38858C50A6955C5CA07DBBF9252D76384" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "962292BC-7A07-46AF-BF8C-53D3FEBA4E3E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "433930B971FF5F133AD4C8053EB3EA2B2D3761DA" : "experiments-objective-c\/",
+    "770655F38858C50A6955C5CA07DBBF9252D76384" : "IOSExperiments\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "experiments-objective-c",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "experiments-objective-c.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:0x384c0\/Experiments-objective-c.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "433930B971FF5F133AD4C8053EB3EA2B2D3761DA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:0x384c0\/Experiments-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "770655F38858C50A6955C5CA07DBBF9252D76384"
+    }
+  ]
+}

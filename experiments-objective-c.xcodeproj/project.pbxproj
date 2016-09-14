@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		492071FD1D87B9BD004F13FE /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492071FB1D87B9BD004F13FE /* String.swift */; };
+		492071FE1D87B9BD004F13FE /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492071FC1D87B9BD004F13FE /* View.swift */; };
 		49C472BD1D82D2FE0081DD85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C472BC1D82D2FE0081DD85 /* main.m */; };
 		49C472C01D82D2FE0081DD85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C472BF1D82D2FE0081DD85 /* AppDelegate.m */; };
 		49C472C31D82D2FE0081DD85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C472C21D82D2FE0081DD85 /* ViewController.m */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		492071AD1D87B3C3004F13FE /* experiments-objective-c-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "experiments-objective-c-Bridging-Header.h"; sourceTree = "<group>"; };
+		492071FB1D87B9BD004F13FE /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		492071FC1D87B9BD004F13FE /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		49C472B81D82D2FE0081DD85 /* experiments-objective-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "experiments-objective-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C472BC1D82D2FE0081DD85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49C472BE1D82D2FE0081DD85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 				49C472D21D82D3280081DD85 /* view */,
 				49C472BE1D82D2FE0081DD85 /* AppDelegate.h */,
 				49C472BF1D82D2FE0081DD85 /* AppDelegate.m */,
+				492071AD1D87B3C3004F13FE /* experiments-objective-c-Bridging-Header.h */,
 				49C472C41D82D2FE0081DD85 /* Main.storyboard */,
 				49C472C91D82D2FE0081DD85 /* LaunchScreen.storyboard */,
 				49C472C71D82D2FE0081DD85 /* Assets.xcassets */,
@@ -107,6 +113,8 @@
 		49C472D71D82D8660081DD85 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				492071FB1D87B9BD004F13FE /* String.swift */,
+				492071FC1D87B9BD004F13FE /* View.swift */,
 				49C472D81D82D92C0081DD85 /* UIViewExtension.h */,
 				49C472D91D82D92C0081DD85 /* UIViewExtension.m */,
 			);
@@ -183,10 +191,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492071FD1D87B9BD004F13FE /* String.swift in Sources */,
 				49C472DA1D82D92C0081DD85 /* UIViewExtension.m in Sources */,
 				49C472C31D82D2FE0081DD85 /* ViewController.m in Sources */,
 				49C472D61D82D3940081DD85 /* BaseViewController.m in Sources */,
 				49C472C01D82D2FE0081DD85 /* AppDelegate.m in Sources */,
+				492071FE1D87B9BD004F13FE /* View.swift in Sources */,
 				49C472BD1D82D2FE0081DD85 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,10 +311,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "experiments-objective-c/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.desu.experiments-objective-c";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "experiments-objective-c/experiments-objective-c-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -312,10 +327,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = "experiments-objective-c/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.desu.experiments-objective-c";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "experiments-objective-c/experiments-objective-c-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -338,6 +357,7 @@
 				49C472D11D82D2FE0081DD85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
